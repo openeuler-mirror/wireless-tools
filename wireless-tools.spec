@@ -2,7 +2,7 @@ Summary: Wireless ethernet configuration tools
 License: GPL+
 Name: wireless-tools
 Version: 29
-Release: 23%{?dist}
+Release: 24
 Epoch: 1
 URL: http://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux/Tools.html
 Source: http://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux/wireless_tools.%{version}.tar.gz
@@ -66,6 +66,9 @@ ln -sf ../../%{_lib}/libiw.so.%{version} \
 
 
 %changelog
+* Thu Mar 24 2022 baizhonggui <baizhonggui@huawei.com> - 1:29-24
+* Delete %{dist}
+
 * Sat Jul 27 2019 Fedora Release Engineering <releng@fedoraproject.org> - 1:29-23
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild
 
