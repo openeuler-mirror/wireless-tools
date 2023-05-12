@@ -2,11 +2,12 @@ Summary: Wireless ethernet configuration tools
 License: GPL+
 Name: wireless-tools
 Version: 29
-Release: 24
+Release: 25
 Epoch: 1
 URL: http://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux/Tools.html
 Source: http://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux/wireless_tools.%{version}.tar.gz
 Patch1: wireless-tools-29-makefile.patch
+Patch2: wireless-tools-29-fix-cc.patch
 
 BuildRequires: gcc
 
@@ -33,6 +34,7 @@ Development headers for the wireless-tools package.
 %prep
 %setup -q -n wireless_tools.%{version}
 %patch1 -p1 -b .makefile
+%patch2 -p1 -b .makefile
 
 %build
 make clean
@@ -66,6 +68,9 @@ ln -sf ../../%{_lib}/libiw.so.%{version} \
 
 
 %changelog
+* Sat Apr 15 2023 Xiaoya Huang <huangxiaoya@iscas.ac.cn> - 1:29-25
+- Fix CC compiler support
+
 * Mon Dec 13 2021 heyitao <heyitao@uniontech.com> - 1:29-24
 - Remove the dist tag in the version.
 
