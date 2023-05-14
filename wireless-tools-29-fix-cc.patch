@@ -1,0 +1,11 @@
+--- a/Makefile	2007-09-18 07:56:46.000000000 +0800
++++ b/Makefile	2023-04-11 15:00:19.610481258 +0800
+@@ -9,7 +9,7 @@
+ endif
+ 
+ ## Compiler to use (modify this for cross compile).
+-CC = gcc
++# CC = gcc
+ ## Other tools you need to modify for cross compile (static lib only).
+ AR = ar
+ RANLIB = ranlib
