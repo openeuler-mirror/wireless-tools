@@ -2,7 +2,7 @@ Summary: Wireless ethernet configuration tools
 License: GPL+
 Name: wireless-tools
 Version: 29
-Release: 25
+Release: 26
 Epoch: 1
 URL: http://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux/Tools.html
 Source: http://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux/wireless_tools.%{version}.tar.gz
@@ -68,6 +68,9 @@ ln -sf ../../%{_lib}/libiw.so.%{version} \
 
 
 %changelog
+* Tue Jul 25 2023 yoo <sunyuechi@iscas.ac.cn> - 29-26
+- fix patch fail
+
 * Sat Apr 15 2023 Xiaoya Huang <huangxiaoya@iscas.ac.cn> - 1:29-25
 - Fix CC compiler support
 
